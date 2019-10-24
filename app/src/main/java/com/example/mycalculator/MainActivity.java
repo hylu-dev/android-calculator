@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             if (str.charAt(i) == '-') {
                 return evaluate(str.substring(0, i)) - evaluate(str.substring(i+1, str.length()));
             }
+        }
+        for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '×') {
                 return evaluate(str.substring(0, i)) * evaluate(str.substring(i+1, str.length()));
             }
